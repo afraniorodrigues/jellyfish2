@@ -1,0 +1,26 @@
+version: "3.8"
+
+services:
+
+  rails:
+    build: .
+    container_name: jellyfish_rails
+    # command: rails s -b 0.0.0.0
+    restart: always
+    network_mode: bridge
+    ports:
+      - 3000:3000
+    depends_on:
+      - postgres
+
+  postgres:
+    image: postgres:13
+    hostname: jellyfish
+    container_name: jellyfish_postgres
+    restart: always
+    network_mode: bridge
+    environment:
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - 5432:5432
+  
