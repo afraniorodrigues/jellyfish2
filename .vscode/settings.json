@@ -1,0 +1,20 @@
+{
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        ".devcontainer": true,
+        ".vscode": true,
+        "tmp": true,
+        ".gitattributes": true,
+        ".gitignore": true,
+        ".rspec": true,
+        ".ruby-version": true,
+        "config.ru": true,
+        "Gemfile.lock": true,
+        "Rakefile": true
+    },
+    "explorerExclude.backup": null
+}
